@@ -55,7 +55,7 @@ Edit Kategori
     </div>
 </div>
 
-<script src="<?=base_url()?>/template/vendor/jquery/jquery.min.js"></script>
+<script src="<?=base_url()?>/template/library/jquery/jquery.min.js"></script>
 <script>
 // Handle change event for the cover file input
 $('#cover_file').on('input', function() {
