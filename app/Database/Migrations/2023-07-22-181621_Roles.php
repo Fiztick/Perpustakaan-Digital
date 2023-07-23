@@ -9,18 +9,20 @@ class Roles extends Migration
     public function up()
     {
         $this->forge->addField([
-            'id' => [
+            'role_id' => [
                 'type'       => 'BIGINT',
                 'constraint' => '5',
+                'unsigned'       => true,
+                'auto_increment' => true,
             ],
-            'name' => [
+            'role_name' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '50',
             ],
             'created_at datetime default current_timestamp',
             'updated_at datetime default current_timestamp on update current_timestamp'
         ]);
-        $this->forge->addKey('id', true);
+        $this->forge->addKey('role_id', true);
         $this->forge->createTable('roles');
     }
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +16,9 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+
+    <!-- datatable -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
 
     <!-- Custom styles for this template-->
     <link href="<?=base_url()?>/template/css/sb-admin-2.min.css" rel="stylesheet">
@@ -59,7 +61,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; E-Perpustakaan 2023</span>
+                        <span>Copyright &copy; E-Perpustakaan 2023 - Hafiz Juansyah Putra</span>
                     </div>
                 </div>
             </footer>
@@ -90,7 +92,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="<?=site_url('auth/logout')?>">Logout</a>
                 </div>
             </div>
         </div>
@@ -109,10 +111,11 @@
     <!-- Page level plugins -->
     <script src="<?=base_url()?>/template/vendor/chart.js/Chart.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="<?=base_url()?>/template/js/demo/chart-area-demo.js"></script>
-    <script src="<?=base_url()?>/template/js/demo/chart-pie-demo.js"></script>
+    <!-- datatable -->
+    <script src="//cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
 
+    <!-- custom -->
+    <script src="<?=base_url()?>/template/js/eperpus.js"></script>
 </body>
 
 </html>

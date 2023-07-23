@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Categories extends Model
+class UserModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'categories';
-    protected $primaryKey       = 'id';
+    protected $table            = 'users';
+    protected $primaryKey       = 'user_id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'name'];
+    protected $allowedFields    = ['user_id', 'email', 'password', 'user_name', 'role_id'];
 
     // Dates
     protected $useTimestamps = false;

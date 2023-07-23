@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BookCopies extends Model
+class BookModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'book_copies';
-    protected $primaryKey       = 'id';
+    protected $table            = 'books';
+    protected $primaryKey       = 'book_id';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'book_id', 'quantity', 'file'];
+    protected $allowedFields    = ['book_id', 'title', 'category_id', 'description', 'cover_file', 'book_file', 'user_id', 'quantity'];
 
     // Dates
     protected $useTimestamps = false;

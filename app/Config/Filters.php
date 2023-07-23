@@ -21,6 +21,8 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'ceklogin' => \App\Filters\LoginFilter::class,
+        'admin'    => \App\Filters\AdminFilter::class,
     ];
 
     /**
@@ -30,11 +32,15 @@ class Filters extends BaseConfig
     public array $globals = [
         'before' => [
             // 'honeypot',
-            // 'csrf',
             // 'invalidchars',
+            'csrf',
+            'ceklogin' => [
+                'except' => ['/', 'Auth', 'Auth/*', 'Register', 'Register/*']
+            ], 
         ],
         'after' => [
             'toolbar',
+            'ceklogin',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -60,5 +66,17 @@ class Filters extends BaseConfig
      * Example:
      * 'isLoggedIn' => ['before' => ['account/*', 'profiles/*']]
      */
-    public array $filters = [];
+    public array $filters = [
+        'admin' => [
+            'before' => [
+                'kategori',
+                'kategori/list-kategori',
+                'kategori/create',
+                'kategori/store',
+                'kategori/edit',
+                'kategori/update',
+                'kategori/delete',
+            ]
+        ],
+    ];
 }
