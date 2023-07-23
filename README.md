@@ -6,9 +6,11 @@
 
 # User
 - Admin
+  
 email = admin@admin.com
 password = 1
 
 - User
+  
 email = hafiz@user.com
 password = hafiz123
