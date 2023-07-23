@@ -18,9 +18,9 @@ class ValueSeeder extends Seeder
             ],
             [
                 'user_id' => '2',
-                'email' => 'hafizjp@user.com',
-                'password' => password_hash(2, PASSWORD_BCRYPT),
-                'user_name' => 'hafizpnj',
+                'email' => 'hafiz@user.com',
+                'password' => password_hash('hafiz123', PASSWORD_BCRYPT),
+                'user_name' => 'Hafiz Juansyah Putra',
                 'role_id' => '2',
             ],
         ];
