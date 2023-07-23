@@ -1,6 +1,6 @@
 <?=$this->extend('layout/default')?>
 
-<?=$this->section('kategori')?>
+<?=$this->section('title')?>
 Edit Kategori
 <?=$this->endSection()?>
 

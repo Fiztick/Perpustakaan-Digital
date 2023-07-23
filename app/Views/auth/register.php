@@ -1,7 +1,7 @@
 <?=$this->extend('layout/auth')?>
 
 <?=$this->section('title')?>
-Login
+Register
 <?=$this->endSection()?>
 
 <?=$this->section('content')?>

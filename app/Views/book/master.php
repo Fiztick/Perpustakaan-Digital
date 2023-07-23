@@ -1,7 +1,7 @@
 <?=$this->extend('layout/default')?>
 
 <?=$this->section('title')?>
-List Buku
+Kelola Buku
 <?=$this->endSection()?>
 
 <?=$this->section('content')?>
