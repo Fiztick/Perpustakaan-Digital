@@ -1,3 +1,8 @@
+# Untuk mendownload file zip
+1. tekan tombol "code" diatas
+2. pilih download zip
+
+
 # Untuk menjalankan ini
 1. ubah .env.copy menjadi .env
 2. import .sqlnya ke database
